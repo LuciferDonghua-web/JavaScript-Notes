@@ -1,0 +1,231 @@
+Introduction to String
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String in JS:</title>
+    <script>
+
+        let marks_class_12 = [91, 82, 63, 84,["fail",[15, 13, 43], "Not Presnt", "Attendence_issue"], false, 52];
+
+        console.log(marks_class_12.length);
+        
+        console.log(marks_class_12[4][1][2]);
+
+        /********String
+         * "A string is a sequence of characters stored in a contiguous block of memory, where each character has its own index (starting at 0). In many programming languages, strings are defined using single quotes (''), double quotes ("") or backticks (``), although the specific syntax may vary depending on the language." 
+        
+         
+
+        1. toString() -> Converts an array to a string of comma seprated value:\\ it will not modify[*] the orginal array. return[string]
+
+        2. join() -> join all the array elements using a seprator will not modify[*] the orignal array. return[string]
+
+        3. pop() -> will pop out the last element from the array. modified[!] return[will return the pop element from the array]. 
+
+        4. push() -> will push(desired_no.) into the array at last position.
+        modified[!] return[no return the new size of the array];
+
+        5. shift() -> will remove the first element from the array. modified[!] and will return[0 index element from the array]:
+
+        6. unshift() -> will insert the desires no. at the zero index[0]; modified[!]; return[will return the new size of an array];
+
+
+        *Methods*******/
+
+        let b = marks_class_12.toString();
+
+        console.log(b);
+        console.log(typeof(b));
+
+        let c = marks_class_12.join('+');
+
+        console.log(c);
+
+        console.log(typeof c);
+
+        let PopElement = marks_class_12.pop(); // will return and remove the last element from the array.
+
+        console.log(PopElement);
+        console.log(typeof PopElement); 
+
+        marks_class_12.push(56); //will enter the push(element) in the last of an array.
+
+        console.log(marks_class_12);
+
+        let r = marks_class_12.shift(); // will remove and return first element from array.
+        console.log(r);
+        console.log(r,marks_class_12);
+
+        let ur = marks_class_12.unshift(12); // will return modified length of the array.
+
+        console.log(ur,marks_class_12);
+        
+
+
+        // let name = "Abheseik";
+        // let name2 = " Singh";
+        // let name3 = "Rana";
+        // console.log(name.length); // length is not a function.
+        // console.log(name.toLowerCase());
+        // console.log(name.toUpperCase());
+
+        // console.log(name.slice(1,4)) // will slice from 2 to 4 but 4 in not included. or 
+        // console.log(name.slice(2));
+        // console.log(name.replace("Abhe","Abhi"));
+
+        // let NewName = name.concat(name2,name3);
+        
+        // // console.log(newName);
+        // console.log(NewName);
+
+        // let freind  = "   Shubham      ";
+        // console.log(freind.trim());
+
+
+        // /* Strings are imutable in order to access the characters at an index we use the following Syntax
+        //     let name = "Harry";
+        //     name[0] -> H;
+        //     name[1] -> a;
+        // name[2] -> r;
+
+        // also you cannot change name[0] = "B"
+        // */
+
+        // // let str1 = "Please give me 1000";
+        // // let amount = Number.parseInt(str1.slice(15));
+        // // console.log(amount);
+        // // console.log(typeof(amount));
+
+        // let marks_class_12 = [91, 82, 63,[2,3,4,[78,"Attendence issue", true]] ,false, "Not Present"]; 
+        // // console.log(marks_class_12);
+        // // console.log(marks_class_12.length);
+        // // marks_class_12[2] = 96;
+        // // console.log(marks_class_12);
+        // // console.log(marks_class_12);
+
+        // // for(let i=0;i<marks_class_12.length;i++){
+        // //     console.log(marks_class_12[i]);
+        // // }
+
+        // // let marks_class_12 = [91, 82, 63,[2,3,4,[78,"Attendence issue", true]] ,false, "Not Present"]; 
+
+        // let c = marks_class_12.join("-");
+
+        // console.log(c);
+        // const sentence = "The quick brown fox jumps over the lazy dog!";
+        // const word = "fox";
+
+        // console.log(`The word ${word} ${sentence.includes(word) ? "is present " : "is not present " }in the sentence.`);
+        // let v1 = `Please give me Rs "1000"`;
+        // let v2 = parseInt(v1.slice(`Please give me Rs "`.length));
+
+        // console.log(v2);
+
+        // console.log(typeof(v2));
+
+
+
+    </script>
+</head>
+
+<body>
+    <pre>
+        String:- String are nothing but a char array[] or a squence of charcter is known as string. in JavaScript defination ?
+
+        1#. Concatenation:- The + value +  operator can be used to combine two string values even if those value are being stored in variables.
+
+        let name = 'John';
+     console.log('My Name is ' + name + '.'); 
+    // Output: 'My Name is John.'
+
+    <!-- --- Template Literals:- Template Literals use backtis instead of single or double quotes to define a string. 
+
+    -- With temolate literals it is possible to use both single as well as double quotes inside a string.
+
+    let sentence = `This is "Roman Reings" Yard`;
+    
+    console.log(sentence);
+    
+    String Interpolation(dynamic string):- String interpolation is a process of embedding expressions within a string literals.It allows us to insert value of a variable or expression into a string    -->
+
+    -- > String Interpolation(dynamic string):- String interpolation is a process of embedding expressions within a string. It allows us to insert value of a variable and exprsion into a string.
+
+    const name = 'John';
+    const age = 30;
+
+    const greeting = `Hello, my name is ${name} and I am ${age} years old.`;
+
+    console.log(greeting);
+
+    -- > Template Literals:- Template Literals use backtis instead of single or double quotes to define a string. With the help of this  you can insert single or double quotes in a string.
+
+    let sentence = `This is "Roman Reings" Yard`;
+    
+    console.log(sentence);
+
+    Escape Sequence Characters:- Escape sequence character is a combination of characters used to represent a special character that cannot be typically typed directly into a string. 
+    
+        
+Escape Sequence	Character Represented
+\n	Newline
+\t	Tab
+\r	Carriage Return
+\b	Backspace
+\f	Form Feed
+\\	Backslash
+\"	Double Quote
+\'	Single Quote
+
+// let fruit = `Bann\`na`;
+
+// let myQueen = `Adam D\`Angelo`;
+
+// console.log(fruit);
+// console.log(myQueen);
+
+String.prototype.includes()
+
+The include() method in a string perform a case sensitive search that wether the given string is present or not in this string by returning true or false.
+
+
+
+Arrays :- An array is a data structure that stores the collection of elements, each identified by an index or key. This element are stored in contiguous memory location.
+
+    #Arrays Methods:-
+        
+        0#. Array.isArray(myArray) :- Check is myArray is array or not > return true : false;
+
+        1#. toString() -> Converts an array to a string of comma seprated value:\\ it will not modify[*] the orginal array. return[string]
+
+        2#. join() -> join all the array elements using a seprator will not modify[*] the orignal array. return[string]
+
+        3#. pop() -> will pop out the last element from the array. modified[!] return[will return the pop element from the array]. 
+
+        4#. push() -> will push(desired_no.) into the array at last position.
+        modified[!] return[no return the new size of the array];
+
+        5#. shift() -> will remove the first element from the array. modified[!] and will return[0 index element from the array]:
+
+        6#. unshift() -> will insert the desires no. at the zero index[0]; modified[!]; return[will return the new size of an array];
+
+        7#. slice() -> This method is used to extract a portion of an array.The following code will extract the element Form index 1 to 2 (exclusive[not included]). \Not modify[*] return[the slice elements typeof (object)];
+
+        8#. splice() -> This method is used to add or remove elements array.
+        Add Example are:-
+        ....let friends = [ "Sumit", "Pawan" , "Paras" ];
+        friends.splice(2, 0, "Amit", "Amar"); // [ "Sumit", "Pawan" , "Amit", "Amar" , "Paras" ]
+
+        -- > 2 means [position] at which add ("Amit", "Amar") at 2nd position:
+        -- > The second parameter (0) defines how many elements should be removed.
+
+
+    
+    
+    </pre>
+</body>
+
+</html>
