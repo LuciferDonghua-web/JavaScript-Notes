@@ -1,0 +1,28 @@
+   function are block of code which return some value.
+        
+        #.Prompt() :- The prompt() function is built-in function in JavaScript that dispalys a dialog box with a message and an input feild for the user to give input. The function return the value enter by the user as a string.
+
+        The syntax for the prompt() function is:
+
+        -- > prompt(message, default_value);
+
+        When the clicks the "OK" btn, the function returns the value entered int the input feild. If the user clicks the "cancel" btn the functions return 'null'.
+        
+        -- > alert() function:- The alert function is a built in function in JS that dispalys a dialog box with a message and an "OK" btn. When alert function is called it pauses the execution of the script and waits for the user to click the "OK" button.
+        
+        The syntax for the alert() function is:
+
+    -- > alert(message)
+
+        The alert() function is often used for:
+
+    Displaying a warning or error message to the user
+    Providing information to the user
+    Debugging purposes (e.g., to display the value of a variable)
+
+Some key points to note about the alert() function:
+
+    1. It is blocking function() in JS, meaning that it will pause the execution of the script until the user press "OK" btn. 
+    2. It is not possible to customize the appearance of the message box or add additional buttons.
+    The alert() function is not suitable for displaying large amounts of text or complex information.
+    3. It is not recommended to use the alert() function for critical or sensitive information, as it can be easily dismissed by the user.
