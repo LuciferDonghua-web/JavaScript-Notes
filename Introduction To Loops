@@ -1,0 +1,123 @@
+#. Introduction To Loops:
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPS in JS</title>
+    <script>
+        // let a = prompt("Enter your fav. color");
+        // console.log(a);
+        // // if(a=="red"){
+        // //     console.log("Red is julia's fav. color.");
+        // // }else{
+        // //     console.log("${a} is not julia's fav. color.");
+        // // }
+        let n = prompt("Enter the value of n");
+        n = Number.parseInt(n);
+
+console.log(n);
+console.log(typeof(n));
+    </script>
+</head>
+<body>
+    <pre>
+         Types of loop in JS :
+
+        1. for loop -> loop a block of no. of times.
+
+        2. for in loop -> loop through the keys of an object.
+
+        3. for of loop -> loop through the value of an object.
+         
+        4. while loop -> loops a block of code based on specific condition.
+        
+        5. do-while-loop -> while loop variant which run atleast once.
+
+        #. Prompt() function -> Prompt is a build- in-function in JavaScript which display a dialog box with some message and input-feild for the user.
+
+        *Note:- it return the text enter by the user, or null if the press the cencel btn. 
+
+        let a = prompt("Enter your fav. color");
+        console.log(a);
+        // if(a=="red"){
+        //     console.log("Red is julia's fav. color.");
+        // }else{
+        //     console.log("${a} is not julia's fav. color.");
+        // }
+
+        Using prompt to get a value from the user is generally not considered a good practice in modern web development. Here are some reasons why:
+
+1. Blocking behavior: As I mentioned earlier, prompt is a blocking function, which means it will pause the execution of the script until the user responds. This can be annoying and disrupt the user experience, especially if the user is in the middle of something else.
+2. Limited functionality: The prompt function only allows for a simple text input, which may not be sufficient for more complex user input needs, such as selecting a date, uploading a file, or entering a password.
+3. Lack of validation: The prompt function does not provide any built-in validation or error handling, which means you'll need to add additional code to validate the user's input.
+4. Security concerns: Using prompt can be a security risk, as it can be used to trick users into entering sensitive information, such as passwords or credit card numbers.
+5. Not accessible: The prompt function is not accessible to users with disabilities, as it does not provide any alternative input methods, such as keyboard-only navigation or screen reader support.
+6. Not customizable: The prompt function has a fixed layout and design, which may not match the look and feel of your application.
+
+#. alert() function :- alert is a built functiion in javaScript that is used to display a dialog box with some meesage, aleting the user with some information.
+
+-> It often used to notify the user an error, warning, or configuration.
+
+Characteristics of the alert function:
+
+Blocking behavior: Like the prompt function, alert is a blocking function, which means it will pause the execution of the script until the user responds (i.e., clicks the "OK" button).
+Limited functionality: The alert function only displays a simple message and does not allow for user input.
+No return value: The alert function does not return any value.
+Not customizable: The alert function has a fixed layout and design, which may not match the look and feel of your application.
+When to use the alert function:
+
+Error handling: Use alert to notify the user of an error or exception that has occurred.
+Warning messages: Use alert to display warning messages, such as "Are you sure you want to delete this file?".
+Confirmation messages: Use alert to display confirmation messages, such as "Your data has been saved successfully".
+Alternatives to the alert function:
+
+HTML notifications: Use HTML notifications, such as the Notification API, to display notifications to the user.
+Custom dialog boxes: Create custom dialog boxes using HTML, CSS, and JavaScript to display messages to the user.
+Console logging: Use the console.log function to log messages to the console instead of displaying them to the user.
+Best practices:
+
+Use sparingly: Use the alert function sparingly, as it can be annoying and disrupt the user experience.
+Use for critical messages only: Use the alert function only for critical messages that require the user's attention.
+Consider accessibility: Consider the accessibility implications of using the alert function, as it may not be accessible to users with disabilities.
+Overall, the alert function is a simple way to display messages to the user, but it should be used judiciously and with consideration for the user experience.
+
+/***************************/
+
+// Immediately Invoked Function Expression [IIFE]:-
+
+ (function func(){
+    console.log("Hello Jatin");
+   })()
+/*******************/   
+
+Functons:- A functions is a block of code which perform some action when it is called. It mainly uses for code resuiblity, structural coding, and for easy debbuging and modification.
+
+Normal function or with hoisted:-
+
+* Also Known as normal function:-
+
+const greet = function(name) {
+    console.log(`Hello, ${name}!`);
+  };
+  
+  greet("John"); // Output: Hello, John!
+
+1. // Immediately Invoked Function Expression [IIFE]:-
+
+ (function func(){
+    console.log("Hello Jatin");
+   })()
+/*******************/ 
+
+
+
+
+
+
+
+
+    </pre>
+</body>
+</html>
