@@ -1,0 +1,297 @@
+#. Emascript :- Emascript is a std on which JS is based!
+It was created to ensure that diff. doc in JavaScript talks about the same language.
+
+
+        -> What is JavaScript(.js extension) ?
+        :- JavaScript is a dynamically type language, means that it determine type of variable at run time rather than compile time.
+        1. JavaScript is a lightweight,OOP language.
+
+        2. It is a scripting language for web pages.It is used to add the interractivity and dynamically functionality to our web pages.
+        3. Nowadays usind in serve-side deveopment:-
+        * JS Fronted Framework: REACT, ANGULAR, Vue.
+        * JS Bacened Framework:
+        * Express,Node.
+
+   # Variables:- Variables are the basic unit to store any data in a program.
+        Variable are containers that is used to store any value.
+
+        # Data Types:- Data types are the keywords that are associated with the variables to specify that which type of value can be store in the variable and how much will it occupy.
+
+
+        In Java Script, there are several data types that you can use to store diff. types of data. Some common data types includes:-
+
+        Primitive and Objects Data type:
+
+        #1 Primitive are the most simplest and basic data type in JS. They Include(nn ss bb u):
+
+        1. Null;
+        2. Number;
+        3. String;
+        4. Symbol;
+        5. BigInt;
+        6. Boolean;
+        7. Undefined;
+
+        ***Primitive data types are immutable, means they cannot be changed once they are created.***
+
+       #2 Objects:- Object are more complex data types in JS. They are composed of key value pairs, where key are strings and values can be any data type including (primitive and objects).
+
+        ***Objects are mutable, means they can be changed once they are created.***
+
+   #2 Objects:- Object are more complex data types in JS. They are composed of key value pairs, where key are strings and values can be any data type including (primitive and objects).
+
+        ***Objects are mutable, means they can be changed once they are created.***
+
+
+        Operators and Expesions:
+
+        1.expoonent operator (num1**num2) gives num1 ki power num2...
+
+        2. Double equals to("49"==49),("49"!=49) will give true, and false
+        because // == , != shows data type conversion behaviour :
+
+        but triple equals to(===),(!==) will give false and true.
+        
+        */
+
+         There are three ways to declare variable: var,let, and const. 
+
+       1. var is a global scoped variable, and let and const are block scope variables.
+
+        2. var can be redeclared and renitialize/update.
+
+        3. let can be renitialize/update but cannot be declared.
+
+        4. const can neither be renitialize or redeclared.
+
+        5. const be initialized at time it was created, while var and let can be initializ later.
+
+        6. var hoisted diiffer __/
+
+
+        --[]Variable are "hoisted" to the top of their scope, which means they are moved to the top of the script, regardless of where they are actually declared.
+        
+        --[] let variables are also hoisted to the top of their scope, but they are not initialized until they are declared. 
+
+        --[] const variables are also hoisted to the top of ther scope, but they are not initialized until they are declared.
+        */
+        /*********/
+
+         Hoisted Concept 
+
+         foo();
+         function foo(){
+            console.log("heloo World");
+         }
+
+        /************/
+
+         const obj = {
+             name: "Jatin Singh Rana",
+             age: 23,
+             isMarried: false,
+             ataraxia: "A state of freedom from emotional disturbance and anxiety",
+             yakka: "Work, especially hard work"
+         };
+
+         console.log(obj);
+         console.log(obj.name);
+         console.log(obj["name"]);
+
+         obj.freind = shubham;
+         obj.freind_age = 23;
+
+       delete obj.freind;
+
+         const sum = (p, q) =>{
+             return p+q;
+         }
+
+         let result = sum(8,8);
+
+         console.log(result);
+
+        /*
+            arrow function are often used when you want to create a small, one-line function that dosen't require a seprate function keyword.
+            It can be used as both return and non-return type function.
+                
+
+
+       
+
+
+        /  properties of an object:-
+
+        // Accessing (You can access object in two ways):- 
+        1.0. console.log(obj.name);
+        1.1. console.log(obj["name"]);
+
+        2.1. // Adding (You can add new key-pairs to the objects);
+
+                obj.freind = shubham;
+        obj.freind_age = 23;
+
+
+        3.1 // Deleting Property in object
+
+        delete obj.freind_age;
+
+        // Nesting Objects:-
+
+
+        function are block of code which return some value.
+        
+        #.Prompt() :- The prompt() function is built-in function in JavaScript that dispalys a dialog box with a message and an input feild for the user to give input. The function return the value enter by the user as a string.
+
+        The syntax for the prompt() function is:
+
+        -- > prompt(message, default_value);
+
+        When the clicks the "OK" btn, the function returns the value entered int the input feild. If the user clicks the "cancel" btn the functions return 'null'.
+        
+        -- > alert() function:- The alert function is a built in function in JS that dispalys a dialog box with a message and an "OK" btn. When alert function is called it pauses the execution of the script and waits for the user to click the "OK" button.
+        
+        The syntax for the alert() function is:
+
+    -- > alert(message)
+
+        The alert() function is often used for:
+
+    Displaying a warning or error message to the user
+    Providing information to the user
+    Debugging purposes (e.g., to display the value of a variable)
+
+Some key points to note about the alert() function:
+
+    1. It is blocking function() in JS, meaning that it will pause the execution of the script until the user press "OK" btn. 
+    2. It is not possible to customize the appearance of the message box or add additional buttons.
+    The alert() function is not suitable for displaying large amounts of text or complex information.
+    3. It is not recommended to use the alert() function for critical or sensitive information, as it can be easily dismissed by the user.
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPS in JS</title>
+    <script>
+        // let a = prompt("Enter your fav. color");
+        // console.log(a);
+        // // if(a=="red"){
+        // //     console.log("Red is julia's fav. color.");
+        // // }else{
+        // //     console.log("${a} is not julia's fav. color.");
+        // // }
+        let n = prompt("Enter the value of n");
+        n = Number.parseInt(n);
+
+console.log(n);
+console.log(typeof(n));
+    </script>
+</head>
+<body>
+    <pre>
+         Types of loop in JS :
+
+        1. for loop -> loop a block of no. of times.
+
+        2. for in loop -> loop through the keys of an object.
+
+        3. for of loop -> loop through the value of an object.
+         
+        4. while loop -> loops a block of code based on specific condition.
+        
+        5. do-while-loop -> while loop variant which run atleast once.
+
+        #. Prompt() function -> Prompt is a build- in-function in JavaScript which display a dialog box with some message and input-feild for the user.
+
+        *Note:- it return the text enter by the user, or null if the press the cencel btn. 
+
+        let a = prompt("Enter your fav. color");
+        console.log(a);
+        // if(a=="red"){
+        //     console.log("Red is julia's fav. color.");
+        // }else{
+        //     console.log("${a} is not julia's fav. color.");
+        // }
+
+        Using prompt to get a value from the user is generally not considered a good practice in modern web development. Here are some reasons why:
+
+1. Blocking behavior: As I mentioned earlier, prompt is a blocking function, which means it will pause the execution of the script until the user responds. This can be annoying and disrupt the user experience, especially if the user is in the middle of something else.
+2. Limited functionality: The prompt function only allows for a simple text input, which may not be sufficient for more complex user input needs, such as selecting a date, uploading a file, or entering a password.
+3. Lack of validation: The prompt function does not provide any built-in validation or error handling, which means you'll need to add additional code to validate the user's input.
+4. Security concerns: Using prompt can be a security risk, as it can be used to trick users into entering sensitive information, such as passwords or credit card numbers.
+5. Not accessible: The prompt function is not accessible to users with disabilities, as it does not provide any alternative input methods, such as keyboard-only navigation or screen reader support.
+6. Not customizable: The prompt function has a fixed layout and design, which may not match the look and feel of your application.
+
+#. alert() function :- alert is a built functiion in javaScript that is used to display a dialog box with some meesage, aleting the user with some information.
+
+-> It often used to notify the user an error, warning, or configuration.
+
+Characteristics of the alert function:
+
+Blocking behavior: Like the prompt function, alert is a blocking function, which means it will pause the execution of the script until the user responds (i.e., clicks the "OK" button).
+Limited functionality: The alert function only displays a simple message and does not allow for user input.
+No return value: The alert function does not return any value.
+Not customizable: The alert function has a fixed layout and design, which may not match the look and feel of your application.
+When to use the alert function:
+
+Error handling: Use alert to notify the user of an error or exception that has occurred.
+Warning messages: Use alert to display warning messages, such as "Are you sure you want to delete this file?".
+Confirmation messages: Use alert to display confirmation messages, such as "Your data has been saved successfully".
+Alternatives to the alert function:
+
+HTML notifications: Use HTML notifications, such as the Notification API, to display notifications to the user.
+Custom dialog boxes: Create custom dialog boxes using HTML, CSS, and JavaScript to display messages to the user.
+Console logging: Use the console.log function to log messages to the console instead of displaying them to the user.
+Best practices:
+
+Use sparingly: Use the alert function sparingly, as it can be annoying and disrupt the user experience.
+Use for critical messages only: Use the alert function only for critical messages that require the user's attention.
+Consider accessibility: Consider the accessibility implications of using the alert function, as it may not be accessible to users with disabilities.
+Overall, the alert function is a simple way to display messages to the user, but it should be used judiciously and with consideration for the user experience.
+
+/***************************/
+
+// Immediately Invoked Function Expression [IIFE]:-
+
+ (function func(){
+    console.log("Hello Jatin");
+   })()
+/*******************/   
+
+Functons:- A functions is a block of code which perform some action when it is called. It mainly uses for code resuiblity, structural coding, and for easy debbuging and modification.
+
+Normal function or with hoisted:-
+
+* Also Known as normal function:-
+
+const greet = function(name) {
+    console.log(`Hello, ${name}!`);
+  };
+  
+  greet("John"); // Output: Hello, John!
+
+1. // Immediately Invoked Function Expression [IIFE]:-
+
+ (function func(){
+    console.log("Hello Jatin");
+   })()
+/*******************/ 
+
+
+
+
+
+
+
+
+    </pre>
+</body>
+</html>      
+
+
+
+
+          
+
